@@ -24,7 +24,7 @@
     <feature name="http://api.phonegap.com/1.0/device" />
 	
 	<gap:config-file platform="android" parent="/manifest/application">
-        <activity android:launchMode="singleInstance" />
+        <activity android:launchMode="singleTop" />
     </gap:config-file>
 
     <!--
