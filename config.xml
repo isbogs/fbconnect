@@ -5,7 +5,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.phonegap.fbconnect"
-        version   = "1.0.0">
+        version   = "1.0.1">
 
     <name>HelloWorld</name>
 
@@ -23,8 +23,9 @@
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
 	
-	
-	<preference name="android-launchMode" value="singleInstance" />
+	<gap:config-file platform="android" parent="/manifest/application">
+        <activity android:launchMode="singleInstance" />
+    </gap:config-file>
 
     <!--
         If you do not want any permissions to be added to your app, add the
